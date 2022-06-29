@@ -34,7 +34,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.aya",
-				"match": "\\b(if|while|for|return|case|when|else|elseif)\\b"
+				"match": "\\b(if|elseif|else|case|when|others|switch|while|for|break|continue|return|foreach|parallel|void)\\b"
 			}]
 		},
 		"global-variables": {
