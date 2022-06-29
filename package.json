@@ -1,0 +1,25 @@
+{
+    "name": "ayaya",
+    "displayName": "ayaya",
+    "description": "ayaya SHIORI support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "aya",
+            "aliases": ["ayaya", "aya"],
+            "extensions": [".dic"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "aya",
+            "scopeName": "",
+            "path": "./syntaxes/aya.tmLanguage.json"
+        }]
+    }
+}
