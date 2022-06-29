@@ -24,6 +24,9 @@
 			"include": "#numeric-values"
 		},
 		{
+			"include": "#global-functions"
+		},
+		{
 			"include": "#global-variables"
 		},
 		{
@@ -54,6 +57,12 @@
 			"patterns": [{
 				"name": "operator.aya",
 				"match": "([\\+|\\-|\\*|\\/|\\%|\\=|\\!|\\<|\\>|\\&|\\!|\\|]+)|_in_|\\!_in_"
+			}]
+		},
+		"global-functions": {
+			"patterns": [{
+				"name": "entity.name.function.aya",
+				"match": "\\b([^\\|\\&\\!\\<\\>\\+\\=\\-\\*\\%\\,\\[\\]\\'\\\"/\\\\:\\(\\)]+)(?=\\()"
 			}]
 		},
 		"global-variables": {
