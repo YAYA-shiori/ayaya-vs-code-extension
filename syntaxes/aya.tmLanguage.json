@@ -12,6 +12,9 @@
 			"include": "#signal-quoted-strings"
 		},
 		{
+			"include": "#numeric-values"
+		},
+		{
 			"include": "#global-variables"
 		},
 		{
@@ -37,13 +40,19 @@
 		"global-variables": {
 			"patterns": [{
 				"name": "variable.global.aya",
-				"match": "\\b([^\\!\\+\\=\\-\\'\\\"/\\\\:\\(\\)]+)\\b"
+				"match": "\\b([^\\!\\+\\=\\-\\*\\%\\,\\[\\]\\'\\\"/\\\\:\\(\\)]+)\\b"
 			}]
 		},
 		"local-variables": {
 			"patterns": [{
 				"name": "variable.local.aya",
-				"match": "\\b_([^\\!\\+\\=\\-\\'\\\"/\\\\:\\(\\)]+)\\b"
+				"match": "\\b_([^\\!\\+\\=\\-\\*\\%\\,\\[\\]\\'\\\"/\\\\:\\(\\)]+)\\b"
+			}]
+		},
+		"numeric-values": {
+			"patterns": [{
+				"name": "constant.numeric.aya",
+				"match": "\\b([0-9]+)\\b"
 			}]
 		},
 		"signal-quoted-strings": {
