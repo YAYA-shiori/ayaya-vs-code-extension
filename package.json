@@ -18,7 +18,7 @@
         }],
         "grammars": [{
             "language": "aya",
-            "scopeName": "",
+            "scopeName": "source.ayaya",
             "path": "./syntaxes/aya.tmLanguage.json"
         }]
     }

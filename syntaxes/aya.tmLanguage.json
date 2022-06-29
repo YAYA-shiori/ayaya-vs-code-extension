@@ -6,27 +6,123 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#double-quoted-strings"
+		},
+		{
+			"include": "#signal-quoted-strings"
+		},
+		{
+			"include": "#global-variables"
+		},
+		{
+			"include": "#local-variables"
+		},
+		{
+			"include": "#brackets"
+		},
+		{
+			"include": "#line-comment"
+		},
+		{
+			"include": "#block-comment"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.aya",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|while|for|return|case|when|else|elseif)\\b"
 			}]
 		},
-		"strings": {
+		"global-variables": {
+			"patterns": [{
+				"name": "variable.global.aya",
+				"match": "\\b([^\\!\\+\\=\\-\\'\\\"/\\\\:\\(\\)]+)\\b"
+			}]
+		},
+		"local-variables": {
+			"patterns": [{
+				"name": "variable.local.aya",
+				"match": "\\b_([^\\!\\+\\=\\-\\'\\\"/\\\\:\\(\\)]+)\\b"
+			}]
+		},
+		"signal-quoted-strings": {
+			"name": "string.quoted.signal.aya",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.selfescape.aya",
+					"match": "\\'\\'"
+				}
+			]
+		},
+		"double-quoted-strings": {
 			"name": "string.quoted.double.aya",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.aya",
-					"match": "\\\\."
+					"name": "constant.character.selfescape.aya",
+					"match": "\\\"\\\""
+				},
+				{
+					"name": "constant.character.exprforment.aya",
+					"begin": "%\\(",
+					"end": "\\)",
+					"patterns": [
+						{
+							"include": "source.ayaya"
+						}
+					]
+				},
+				{
+					"name": "constant.character.nameforment.aya",
+					"match": "%"
 				}
 			]
+		},
+		"brackets": {
+			"patterns": [
+				{
+					"name": "punctuation.section.bracket.aya",
+					"match": "\\(|\\)",
+					"patterns": [
+						{
+							"include": "source.ayaya"
+						}
+					]
+				},
+				{
+					"name": "punctuation.section.brace.aya",
+					"match": "\\{|\\}",
+					"patterns": [
+						{
+							"include": "source.ayaya"
+						}
+					]
+				},
+				{
+					"name": "punctuation.section.parenthesis.aya",
+					"match": "\\[|\\]",
+					"patterns": [
+						{
+							"include": "source.ayaya"
+						}
+					]
+				}
+			]
+		},
+		"line-comment": {
+			"name": "comment.line.aya",
+			"begin": "//",
+			"end": "$\\n?|\\Z"
+		},
+		"block-comment": {
+			"name": "comment.block.aya",
+			"begin": "/\\*",
+			"end": "\\*/"
 		}
 	},
-	"scopeName": ""
+	"scopeName": "source.ayaya"
 }
