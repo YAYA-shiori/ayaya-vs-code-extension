@@ -2,7 +2,7 @@
     "name": "ayaya",
     "displayName": "ayaya",
     "description": "ayaya SHIORI support",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.68.0"
     },
@@ -12,7 +12,7 @@
     "contributes": {
         "languages": [{
             "id": "aya",
-            "aliases": ["ayaya", "aya"],
+            "aliases": ["yaya", "aya"],
             "extensions": [".dic", ".aym"],
             "configuration": "./language-configuration.json"
         }],
