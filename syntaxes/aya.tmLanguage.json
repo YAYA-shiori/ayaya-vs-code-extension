@@ -62,19 +62,19 @@
 		"global-functions": {
 			"patterns": [{
 				"name": "entity.name.function.aya",
-				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}\\s]+\\s*(?=\\()"
+				"match": "\\b[^!\"#$%&'()*+,\\-/:;<=>?@\\[\\\\\\]`{|}\\s]+\\s*(?=\\()"
 			}]
 		},
 		"global-variables": {
 			"patterns": [{
 				"name": "variable.global.aya",
-				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}\\s]+\\b"
+				"match": "\\b[^!\"#$%&'()*+,\\-/:;<=>?@\\[\\\\\\]`{|}\\s]+\\b"
 			}]
 		},
 		"local-variables": {
 			"patterns": [{
 				"name": "variable.local.aya",
-				"match": "\\b_[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}\\s]+\\b"
+				"match": "\\b_[^!\"#$%&'()*+,\\-/:;<=>?@\\[\\\\\\]`{|}\\s]+\\b"
 			}]
 		},
 		"numeric-values": {
