@@ -56,31 +56,31 @@
 		"operators": {
 			"patterns": [{
 				"name": "operator.aya",
-				"match": "\\b(([\\+|\\-|\\*|\\/|\\%|\\=|\\!|\\<|\\>|\\&|\\!|\\|]+)|_in_|\\!_in_)\\b"
+				"match": "[+\\-*/%=!<>&|]+|_in_|!_in_"
 			}]
 		},
 		"global-functions": {
 			"patterns": [{
 				"name": "entity.name.function.aya",
-				"match": "\\b([^\\|\\&\\!\\<\\>\\+\\=\\-\\*\\%\\,\\[\\]\\'\\\"/\\\\:\\;\\(\\)]+)(?=\\()"
+				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"\\/\\\\:;(){}]+(?=\\()"
 			}]
 		},
 		"global-variables": {
 			"patterns": [{
 				"name": "variable.global.aya",
-				"match": "\\b([^\\|\\&\\!\\<\\>\\+\\=\\-\\*\\%\\,\\[\\]\\'\\\"/\\\\:\\;\\(\\)]+)\\b"
+				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}]+\\b"
 			}]
 		},
 		"local-variables": {
 			"patterns": [{
 				"name": "variable.local.aya",
-				"match": "\\b_([^\\|\\&\\!\\<\\>\\+\\=\\-\\*\\%\\,\\[\\]\\'\\\"/\\\\:\\;\\(\\)]+)\\b"
+				"match": "\\b_[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}]+\\b"
 			}]
 		},
 		"numeric-values": {
 			"patterns": [{
 				"name": "constant.numeric.aya",
-				"match": "\\b([0-9]+)\\b"
+				"match": "\\b[0-9]+\\b"
 			}]
 		},
 		"signal-quoted-strings": {
