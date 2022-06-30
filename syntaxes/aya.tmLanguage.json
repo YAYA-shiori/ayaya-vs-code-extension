@@ -80,7 +80,7 @@
 		"numeric-values": {
 			"patterns": [{
 				"name": "constant.numeric.aya",
-				"match": "\\b[0-9]+\\b"
+				"match": "\\b(\\d+\\.?\\d*|0b[01]+|0x[0-9a-fA-F]+)\\b"
 			}]
 		},
 		"signal-quoted-strings": {
