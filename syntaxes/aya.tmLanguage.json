@@ -62,7 +62,7 @@
 		"global-functions": {
 			"patterns": [{
 				"name": "entity.name.function.aya",
-				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}]+(?=\\()"
+				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}\\s]+\\s*(?=\\()"
 			}]
 		},
 		"global-variables": {
