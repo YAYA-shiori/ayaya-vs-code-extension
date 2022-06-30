@@ -68,13 +68,13 @@
 		"global-variables": {
 			"patterns": [{
 				"name": "variable.global.aya",
-				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}]+\\b"
+				"match": "\\b[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}\\s]+\\b"
 			}]
 		},
 		"local-variables": {
 			"patterns": [{
 				"name": "variable.local.aya",
-				"match": "\\b_[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}]+\\b"
+				"match": "\\b_[^|&!<>+=\\-*%,\\[\\]'\"/\\\\:;(){}\\s]+\\b"
 			}]
 		},
 		"numeric-values": {
