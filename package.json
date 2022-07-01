@@ -2,7 +2,7 @@
     "name": "ayaya",
     "displayName": "ayaya",
     "description": "ayaya SHIORI support",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.68.0"
     },
@@ -10,17 +10,27 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "aya",
-            "aliases": ["yaya", "aya"],
-            "extensions": [".dic", ".aym"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "aya",
-            "scopeName": "source.ayaya",
-            "path": "./syntaxes/aya.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "aya",
+                "aliases": [
+                    "yaya",
+                    "aya"
+                ],
+                "extensions": [
+                    ".dic",
+                    ".aym"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "aya",
+                "scopeName": "source.ayaya",
+                "path": "./syntaxes/aya.tmLanguage.json"
+            }
+        ]
     },
     "repository": {
         "type": "git",
