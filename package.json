@@ -3,6 +3,7 @@
     "displayName": "ayaya",
     "description": "ayaya SHIORI support",
     "version": "0.0.4",
+    "icon": "./aya.png",
     "engines": {
         "vscode": "^1.68.0"
     },
@@ -21,6 +22,10 @@
                     ".dic",
                     ".aym"
                 ],
+                "icon": {
+                    "light": "./icons/aya-light.png",
+                    "dark": "./icons/aya-dark.png"
+                },
                 "configuration": "./language-configuration.json"
             }
         ],
