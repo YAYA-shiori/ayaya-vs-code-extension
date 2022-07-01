@@ -52,13 +52,17 @@
 		},
 		"preprocessor-define": {
 			"name": "meta.preprocessor.define.aya",
-			"begin": "#(globaldefine|define)",
-			"end": "$\\n?|\\Z",
-			"patterns": [
-				{
-					"include": "source.ayaya"
+			"begin": "#(globaldefine|define)\\s+[^\\s]+\\s+(.+)",
+			"beginCaptures": {
+				"2": {
+					"patterns": [
+						{
+							"include": "source.ayaya"
+						}
+					]
 				}
-			]
+			},
+			"end": "$\\n?|\\Z"
 		},
 		"keywords": {
 			"patterns": [{
