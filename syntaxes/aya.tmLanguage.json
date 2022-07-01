@@ -9,6 +9,9 @@
 			"include": "#block-comment"
 		},
 		{
+			"include": "#preprocessor-define"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -46,6 +49,16 @@
 			"name": "comment.block.aya",
 			"begin": "/\\*",
 			"end": "\\*/"
+		},
+		"preprocessor-define": {
+			"name": "meta.preprocessor.define.aya",
+			"begin": "#(globaldefine|define)",
+			"end": "$\\n?|\\Z",
+			"patterns": [
+				{
+					"include": "source.ayaya"
+				}
+			]
 		},
 		"keywords": {
 			"patterns": [{
