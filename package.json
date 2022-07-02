@@ -2,7 +2,7 @@
     "name": "ayaya",
     "displayName": "ayaya",
     "description": "ayaya SHIORI support",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "icon": "aya.png",
     "engines": {
         "vscode": "^1.68.0"
