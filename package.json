@@ -16,6 +16,7 @@
                 "id": "aya",
                 "aliases": [
                     "yaya",
+                    "ayaya",
                     "aya"
                 ],
                 "extensions": [
@@ -26,7 +27,22 @@
                     "light": "./icons/aya-light.png",
                     "dark": "./icons/aya-dark.png"
                 },
-                "configuration": "./language-configuration.json"
+                "configuration": "./language-configurations/aya.json"
+            },
+            {
+                "id": "aya-dicdir-confing",
+                "aliases": [
+                    "yaya: dicdir-confing",
+                    "dicdir-confing"
+                ],
+                "filenamePatterns": [
+                    "_loading_order.txt"
+                ],
+                "icon": {
+                    "light": "./icons/aya-dicdir-confing-light.png",
+                    "dark": "./icons/aya-dicdir-confing-dark.png"
+                },
+                "configuration": "./language-configurations/aya-dicdir-confing.json"
             }
         ],
         "grammars": [
@@ -34,6 +50,11 @@
                 "language": "aya",
                 "scopeName": "source.ayaya",
                 "path": "./syntaxes/aya.tmLanguage.json"
+            },
+            {
+                "language": "aya-dicdir-confing",
+                "scopeName": "source.ayaya-dicdir-confing",
+                "path": "./syntaxes/aya-dicdir-confing.tmLanguage.json"
             }
         ]
     },

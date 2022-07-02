@@ -1,0 +1,49 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ayaya",
+	"patterns": [
+		{
+			"include": "#line-comment"
+		},
+		{
+			"include": "#dic"
+		},
+		{
+			"include": "#dicif"
+		},
+		{
+			"include": "#dicdir"
+		},
+		{
+			"include": "#includes"
+		}
+	],
+	"repository": {
+		"line-comment": {
+			"name": "comment.line.ayaya-dicdir-confing",
+			"begin": "//",
+			"end": "$\\n?|\\Z"
+		},
+		"dic": {
+			"name": "meta.dic.ayaya-dicdir-confing",
+			"begin": "^dic\\s*,\\s*",
+			"end": "$\\n?|\\Z"
+		},
+		"dicif": {
+			"name": "meta.dicif.ayaya-dicdir-confing",
+			"begin": "^dicif\\s*,\\s*",
+			"end": "$\\n?|\\Z"
+		},
+		"dicdir": {
+			"name": "meta.dicdir.ayaya-dicdir-confing",
+			"begin": "^dicdir\\s*,\\s*",
+			"end": "$\\n?|\\Z"
+		},
+		"includes": {
+			"name": "meta.includes.ayaya-dicdir-confing",
+			"begin": "^(include|includeEX)\\s*,\\s*",
+			"end": "$\\n?|\\Z"
+		}
+	},
+	"scopeName": "source.ayaya-dicdir-confing"
+}
