@@ -26,5 +26,11 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "folding": {
+        "markers": {
+          "start": "^\\s*//\\s*#?(BLOCK|region)\\b",
+          "end": "^\\s*//\\s*#?(BLOCK_END|endregion)\\b"
+        }
+    }
 }
