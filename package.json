@@ -2,7 +2,7 @@
     "name": "ayaya",
     "displayName": "ayaya",
     "description": "ayaya SHIORI support",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "icon": "aya.png",
     "engines": {
         "vscode": "^1.68.0"
@@ -39,10 +39,54 @@
                     "_loading_order.txt"
                 ],
                 "icon": {
-                    "light": "./icons/aya-dicdir-confing-light.png",
-                    "dark": "./icons/aya-dicdir-confing-dark.png"
+                    "light": "./icons/aya-confing-light.png",
+                    "dark": "./icons/aya-confing-dark.png"
                 },
                 "configuration": "./language-configurations/aya-dicdir-confing.json"
+            },
+            {
+                "id": "aya-base-confing",
+                "aliases": [
+                    "yaya: confing",
+                    "aya-confing",
+                    "yaya-confing"
+                ],
+                "filenamePatterns": [
+                    "aya.txt",
+                    "yaya.txt",
+                    "aya_base.txt",
+                    "yaya_base.txt",
+                    "aya_common.txt",
+                    "yaya_common.txt",
+                    "aya_emerg.txt",
+                    "yaya_emerg.txt",
+                    "aya_config.txt",
+                    "yaya_config.txt"
+                ],
+                "icon": {
+                    "light": "./icons/aya-confing-light.png",
+                    "dark": "./icons/aya-confing-dark.png"
+                },
+                "configuration": "./language-configurations/aya-confing.json"
+            },
+            {
+                "id": "aya-encoded-dic",
+                "aliases": [
+                    "yaya: ayc",
+                    "ayc",
+                    "aya-encoded-dic",
+                    "yaya-encoded-dic"
+                ],
+                "extensions": [
+                    ".ayc"
+                ],
+                "icon": {
+                    "light": "./icons/ayc-light.png",
+                    "dark": "./icons/ayc-dark.png"
+                },
+                "mimetypes": [
+                    "application/octet-stream"
+                ]
             }
         ],
         "grammars": [
@@ -55,6 +99,11 @@
                 "language": "aya-dicdir-confing",
                 "scopeName": "source.ayaya-dicdir-confing",
                 "path": "./syntaxes/aya-dicdir-confing.tmLanguage.json"
+            },
+            {
+                "language": "aya-base-confing",
+                "scopeName": "source.ayaya-confing",
+                "path": "./syntaxes/aya-confing.tmLanguage.json"
             }
         ]
     },

@@ -11,25 +11,25 @@
 	],
 	"repository": {
 		"line-comment": {
-			"name": "comment.line.ayaya-dicdir-confing",
+			"name": "comment.line.ayaya-confing",
 			"begin": "//",
 			"end": "$\\n?|\\Z"
 		},
 		"keywords": {
-			"name": "keyword.meta.ayaya-dicdir-confing",
-			"match": "\\b(charset.dic|dic(if)?|dicdir|include(EX)?)\\b"
+			"name": "keyword.meta.ayaya-confing",
+			"match": "\\b((charset(.(dic|setting|output|log|file|save|save.old|extension))?)|dic(if)?|dicdir|msglang|messagetxt|basepath|include(EX)?|log|(iolog(.filter(.(mode|keyword(.(delete|(regex(.delete)?)))?))?)?)|fncdepth|looplimit|save.(encode|auto)|maxlognum)\\b"
 		},
 		"variables": {
-			"name": "variable.meta.ayaya-dicdir-confing",
+			"name": "variable.meta.ayaya-confing",
 			"begin": "",
 			"end": "$(\\n?|\\Z)|(\\s*(?=//))"
 		},
 		"confinglines": {
-			"name": "meta.confing.ayaya-dicdir-confing",
+			"name": "meta.confing.ayaya-confing",
 			"begin": "(.+)(\\s)*,(\\s)*",
 			"beginCaptures": {
 				"1": {
-					"name": "keyword.meta.ayaya-dicdir-confing"
+					"name": "keyword.meta.ayaya-confing"
 				}
 			},
 			"end": "$\\n?|\\Z",
@@ -43,5 +43,5 @@
 			]
 		}
 	},
-	"scopeName": "source.ayaya-dicdir-confing"
+	"scopeName": "source.ayaya-confing"
 }
